@@ -1,0 +1,22 @@
+.bg-main {
+    background-color: rgb(233, 233, 233);
+}
+
+.brand-table img {
+    max-width: 100px;
+}
+
+.brands button {
+    background-color: transparent;
+    border: 0px;
+}
+
+.brands button:hover {
+    border: solid rgba(0, 162, 255, 0.75);
+    background-color: rgba(0, 162, 255, 0.25);
+}
+
+.sort-filter button,
+.sort-filter .dropdown {
+    font-size: 14px;
+}

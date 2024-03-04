@@ -1,0 +1,66 @@
+.add {
+    background: #33c2ff;
+    width: 27px;
+    height: 27px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+        color: white;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.modalType {
+    display: flex;
+    overflow-y: scroll;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    gap: 10px;
+
+    .typeName {
+        display: flex;
+        width: 120px;
+        font-size: 13px;
+
+        .icon {
+            font-size: 13px;
+            margin-right: 5px;
+        }
+
+        &:hover {
+            color: hsl(187, 85%, 43%);
+            cursor: pointer;
+        }
+    }
+}
+
+.modalBody {
+    .information {
+        display: flex;
+        gap: 1rem;
+
+        .leftContainer {
+            width: 40%;
+        }
+
+        .rightContainer {
+            width: 60%;
+        }
+    }
+}
+
+.required {
+    color: red;
+}
+
+.selected {
+    color: hsl(187, 85%, 43%);
+    pointer-events: none;
+    border-bottom: 3px solid;
+}

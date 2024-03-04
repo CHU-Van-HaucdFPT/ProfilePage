@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.variants-wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 20px; 
+  }
+
+.ant-modal-content {
+    width: 98%;
+    height: 98%;
+    border-radius: 3px !important;
+    margin-left: 1.2%;
+    margin-top: 1%;
+}
+
+.ant-modal-content {
+    overflow-y: scroll; /* Kích hoạt thanh cuộn theo chiều dọc */
+    scrollbar-width: thin; /* Kích thước của thanh cuộn */
+    scrollbar-color: #d3d3d3 #f5f5f5; /* Màu của thanh cuộn */
+}
+
+/* Thanh cuộn trên các trình duyệt Chrome, Safari */
+.ant-modal-content::-webkit-scrollbar {
+  width: 12px; /* Chiều rộng của thanh cuộn */
+}
+
+.ant-modal-content::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3; /* Màu của thanh cuộn */
+  border-radius: 6px; /* Độ cong của viền thanh cuộn */
+}
+
+/* Màu nền của vùng track (phần bên dưới thanh cuộn) */
+.ant-modal-content::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+/* Thanh cuộn trên các trình duyệt Firefox */
+.ant-modal-content {
+  scrollbar-width: thin; /* Kích thước của thanh cuộn */
+  scrollbar-color: #d3d3d3 #f5f5f5; /* Màu của thanh cuộn */
+}

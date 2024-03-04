@@ -1,0 +1,236 @@
+.newsContainer {
+    background: white;
+    padding: 0 3rem;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        .headerName {
+            margin-bottom: 0.3rem;
+            display: flex;
+            justify-content: space-between;
+
+            .name {
+                font-weight: 500;
+                text-decoration: underline;
+                font-size: 22px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .headerSearch {
+        }
+    }
+
+    .footer {
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.deleteActionModal {
+    overflow: hidden;
+    font-family: Roboto,sans-serif;
+    background: #e6e7ec;
+    padding: 0px;
+    margin: 0px;
+    height: 300px;
+    border-radius: 3px;
+
+    .deleteActionContainer {
+        height: 230px;
+        font-family: Roboto,sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .title {
+            font-weight: 600;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .desc {
+            font-size: 17px;
+            text-align: center;
+        }
+
+        .groupBtn {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+
+            .btn {
+                width: 100px;
+            }
+        }
+
+    }
+}
+
+.newsDetailsModal {
+    font-family: Roboto,sans-serif;
+    background: #e6e7ec;
+    padding: 0px;
+    margin: 0px;
+    height: 95vh;
+    border-radius: 3px;
+
+    .newsDetailsContainer {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+
+        .newsTitle {
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .newsUpdatedAt {
+            font-size: 13.3px;
+            opacity: .5;
+        }
+
+        .line {
+            border-bottom: 1px solid #e6e7ec;
+            opacity: .5;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+.newsItemContainer {
+    border: 2px solid #e8e8e8;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+
+    .left {
+        width: 250px;
+        border: 1px solid #e8e8e8;
+        border-radius: 7px;
+
+        .newsImage {
+            position: relative;
+            height: 150px;
+
+            .firstImage {
+                z-index: 1;
+                width: 90%;
+                height: 90%;
+                position: absolute;
+                left: 0;
+                border-radius: 5px;
+                margin-left: 5%;
+                margin-top: 2.5%;
+            }
+
+            .secImage {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                opacity: 0.5;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .right {
+        flex: 1 1;
+        padding: 0.3rem;
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+
+            .text {
+                font-size: 1.3rem;
+                font-weight: 500;
+                text-transform: uppercase;
+
+                &:hover {
+                    cursor: pointer;
+                    color: hsl(199, 100%, 33%);
+                }
+            }
+
+            .btnActionUD {
+                display: flex;
+                gap: .5rem;
+                justify-content: center;
+                align-items: center;
+
+                .delete {
+                    font-size: 15px;
+                    border: 1px solid red;
+                    width: 25.5px;
+                    height: 25.5px;
+                    // padding: 0px 5px;
+                    border-radius: 5px;
+                    color: red;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    &:hover {
+                        cursor: pointer;
+                        color: white;
+                        background: red;
+                    }
+                }
+            }
+
+        }
+
+        .viewCount {
+            display: flex;
+            gap: 0.3rem;
+            align-items: center;
+            font-size: 14px;
+
+            &:hover {
+                cursor: context-menu;
+            }
+        }
+
+        .shortContent {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+
+            &:hover {
+                cursor: context-menu;
+            }
+        }
+
+        .updatedAt {
+            font-size: 0.813rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+
+            &:hover {
+                cursor: context-menu;
+            }
+        }
+    }
+}
